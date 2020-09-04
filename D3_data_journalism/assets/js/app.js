@@ -75,7 +75,12 @@ d3.csv("assets/data/data.csv").then(function(povData) {
     node.append("text")
       .attr("x", function(d) { return xLinearScale(d.poverty); })
       .attr("y", function(d) { return yLinearScale(d.healthcare); })
-      .text(function(d) { return d.abbr});
+      .text(function(d) { return d.abbr})
+      .attr("font-size", "12px")
+      .attr("dx", "7.6em")
+      .attr("dy", "2em")
+      .style("fill", "white")
+      .style("font-weight", "bold");
 
 
     // Create axes labels
@@ -85,12 +90,14 @@ d3.csv("assets/data/data.csv").then(function(povData) {
       .attr("x", 0 - (height / 2))
       .attr("dy", "1em")
       .attr("class", "axisText")
-      .text("Lacks Healthcare (%)");
+      .text("Lacks Healthcare (%)")
+      .style("fill", "black");
 
     chartGroup.append("text")
       .attr("transform", `translate(${width / 2}, ${height + margin.top + 30})`)
       .attr("class", "axisText")
-      .text("In Poverty (%)");
+      .text("In Poverty (%)")
+      .style("fill", "black");
   }).catch(function(error) {
     console.log(error);
   });
