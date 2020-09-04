@@ -1,3 +1,4 @@
+// Chart params
 var svgWidth = 960;
 var svgHeight = 500;
 
