@@ -67,7 +67,8 @@ d3.csv("assets/data/data.csv").then(function(povData) {
     .attr("fill", "blue")
     .attr("opacity", ".5");
 
-
+    // Step 6: Create Adding Labels to the Circles
+    // ==============================
     var node = svg.selectAll("circlesGroup")
                 .data(povData)
                 .enter()
@@ -83,7 +84,8 @@ d3.csv("assets/data/data.csv").then(function(povData) {
       .style("font-weight", "bold");
 
 
-    // Create axes labels
+    // Step 7: Adding Axis Labels
+    // ==============================
     chartGroup.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left + 40)
@@ -98,6 +100,8 @@ d3.csv("assets/data/data.csv").then(function(povData) {
       .attr("class", "axisText")
       .text("In Poverty (%)")
       .style("fill", "black");
+
+      
   }).catch(function(error) {
     console.log(error);
   });
