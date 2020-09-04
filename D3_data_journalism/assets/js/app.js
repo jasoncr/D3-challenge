@@ -83,7 +83,6 @@ d3.csv("assets/data/data.csv").then(function(povData) {
       .style("fill", "white")
       .style("font-weight", "bold");
 
-
     // Step 7: Adding Axis Labels
     // ==============================
     chartGroup.append("text")
@@ -101,7 +100,7 @@ d3.csv("assets/data/data.csv").then(function(povData) {
       .text("In Poverty (%)")
       .style("fill", "black");
 
-      
+
   }).catch(function(error) {
     console.log(error);
   });
