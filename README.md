@@ -1,3 +1,3 @@
-# D3-challenge
+# Poverty-vs-Healthcare-Website
 In this challenge, I took data from the 2014 ACS website at https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml to create a scatter plot about 2 variables and their relationship. I chose the poverty percentage and the percent that lacks healthcare for individual states. Using D3 and JavaScript, I referenced an HTML file that was already styled with a CSS, created the scatter plot, and then added labels for easier reading. In order to run this, I used a python http server on my device. Below is a screenshot of the scatter plot. 
 ![Scatter_plot](/Images/75352.png)
